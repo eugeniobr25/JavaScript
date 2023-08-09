@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de controle 2</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let ovos = 4;
+        let farinha = "";
+        let manteiga = true;
+        let agua = false;
+
+        // tem agua e manteiga para fazer o bolo?
+        console.log(manteiga && agua);
+
+        // Comprei a agua
+        agua = true;
+
+        // tem agua e manteiga para fazer o bolo?
+        console.log(manteiga && agua);
+
+        // Comprei a Farinha
+        farinha = "Finna";
+
+        // Farinha é diferente de vazio ou a farinha é igual a dona benta?
+        // Existe farinha ou a farinha é igual a Dona Benta?
+        console.log(farinha != "" || farinha == "Dona Benta");
+
+        // Temos todos os ingredientes para o bolo?
+        const existe_farinha = farinha != "" || farinha == "Dona Benta";
+        const existe_ovos = ovos >= 4;
+        const posso_fazer_bolo = manteiga && agua && existe_farinha && existe_ovos;
+
+        // se (if)
+        if (posso_fazer_bolo) {
+            console.log(`Posso fazer bolo? sim!`);
+        }
+        // caso não
+        else {
+            console.log(`Posso fazer bolo? não!`);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de controle 2</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let ovos = 4;
+        let farinha = "";
+        let manteiga = true;
+        let agua = false;
+
+        // tem agua e manteiga para fazer o bolo?
+        console.log(manteiga && agua);
+
+        // Comprei a agua
+        agua = true;
+
+        // tem agua e manteiga para fazer o bolo?
+        console.log(manteiga && agua);
+
+        // Comprei a Farinha
+        farinha = "Finna";
+
+        // Farinha é diferente de vazio ou a farinha é igual a dona benta?
+        // Existe farinha ou a farinha é igual a Dona Benta?
+        console.log(farinha != "" || farinha == "Dona Benta");
+
+        // Temos todos os ingredientes para o bolo?
+        const existe_farinha = farinha != "" || farinha == "Dona Benta";
+        const existe_ovos = ovos >= 4;
+        const texto =  `Posso fazer bolo? ${manteiga && agua && existe_farinha && existe_ovos}`
+        console.log(texto);
+
+        // "!" sempre exibe o contrario da informação a que ele foi atribuido
+
+        
+    </script>
+</body>
+</html>
